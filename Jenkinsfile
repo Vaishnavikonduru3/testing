@@ -1,4 +1,4 @@
-def gitUtils = load 'git.groovy'
+def gitUtils = load 'sharedlibrary/git.groovy'
 
 pipeline {
     agent any
