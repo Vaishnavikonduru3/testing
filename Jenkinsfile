@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                    def gitUtils = load 'sharedlibrary/git.groovy'
+                    def gitUtils = load 'https://github.com/Vaishnavikonduru3/testing/blob/main/sharedlibrary/git.groovy'
                     gitUtils.gitCheckout(branch: 'main')
             }
         }
