@@ -1,4 +1,4 @@
-library('sharedlibrary/git.groovy')
+
 
 pipeline {
     agent any
@@ -6,6 +6,8 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
+               
+                    def gitUtils = load 'sharedlibrary/git.groovy'
                     gitUtils.gitCheckout(branch: 'main')
             }
         }
