@@ -1,4 +1,4 @@
-def gitUtils = load 'path/to/git.groovy'
+def gitUtils = load 'git.groovy'
 
 pipeline {
     agent any
