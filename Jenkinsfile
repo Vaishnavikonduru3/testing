@@ -5,10 +5,11 @@ pipeline {
 
     stages {
         stage('Checkout') {
-            steps {
-                
+               bat '''
+                git clone https://github.com/Vaishnavikonduru3/testing.git
+                cd sharedlibrary/groovy.git
                 gitUtils.gitCheckout(branch: 'main')
-            }
+            '''
         }
 
         // Add more stages here that use the gitUtils functions
