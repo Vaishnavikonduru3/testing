@@ -16,7 +16,7 @@ def gitPull(String remote, String branch) {
     bat "git pull ${remote} ${branch}"
 }
 
-def gitPubat(String remote, String branch) {
+def gitPush(String remote, String branch) {
     bat "git pubat ${remote} ${branch}"
 }
 
@@ -32,7 +32,7 @@ def gitTag(String tagName) {
     bat "git tag ${tagName}"
 }
 
-def gitPubatTag(String tagName, String remote) {
+def gitPushTag(String tagName, String remote) {
     bat "git pubat ${remote} ${tagName}"
 }
 
