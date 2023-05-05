@@ -33,7 +33,7 @@ def gitTag(String tagName) {
 }
 
 def gitPushTag(String tagName, String remote) {
-    bat "git pubat ${remote} ${tagName}"
+    bat "git push ${remote} ${tagName}"
 }
 
 def gitMerge(String branch) {
